@@ -1,0 +1,27 @@
+version: "3"
+services:
+  adminer:
+    image: adminer
+    ports:
+      - 8081:8080
+  database:
+    image: postgres
+    environment:
+      POSTGRES_USER: fakus
+      POSTGRES_PASSWORD: fakus
+      POSTGRES_DB: fakus
+    volumes:
+      - database:/var/lib/postgres/data
+    ports:
+      - 5454:5432
+  fastapi:
+    build:
+      context: .
+      dockerfile: dev.Dockerfile
+    ports:
+      - 8000:8000
+    volumes:
+      - ./api_python:/app
+volumes:
+  database:
+    driver: local
