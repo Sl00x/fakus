@@ -17,7 +17,7 @@ cd fakus
 2. Créez un fichier `env.ini` pour configurer les variables d'environnement nécessaires.
 
 ```ini
-# Exemple de fichier .env
+# Exemple de fichier env.ini
 name=nom du projet
 db.url=postgres://utilisateur:mdp@postgres:5432/nomdelabdd
 ```
