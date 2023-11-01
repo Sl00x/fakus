@@ -28,7 +28,7 @@ db.url=postgres://utilisateur:mdp@postgres:5432/nomdelabdd
 docker compose build && docker compose up -d
 ```
 
-4. L'application sera accessible à l'adresse [http://localhost:8080](http://localhost:8080).
+4. L'application sera accessible à l'adresse [http://localhost:8000](http://localhost:8000).
 
 ## 🤝 Contribution
 
