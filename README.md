@@ -18,6 +18,7 @@ cd fakus
 
 ```ini
 # Exemple de fichier env.ini
+[app]
 name=nom du projet
 db.url=postgres://utilisateur:mdp@postgres:5432/nomdelabdd
 ```
